@@ -28,7 +28,7 @@ a { color: #b9a9f5; }
 <ul>
 <li>The phone connects directly to Google. KIBI's server doesn't hold the owner's Google sign-in. By default, new mail notifications and answers about mail are built on the phone with simple rules, and KIBI doesn't send the emails to an AI model.</li>
 <li>If the owner turns on "smarter summaries", the text of new mail worth a notification, and the details and preview text of mail matching a question in chat, are sent to an AI model (Anthropic's Claude) through the owner's own server. Mail recognized as a one-time code is never sent this way. Promotions aren't sent for notifications, but can be sent if they match a question.</li>
-<li>KIBI's replies about mail, which can include senders and subjects, are saved in the owner's chat history. That history is end-to-end encrypted on the owner's server and shared with their other devices. Recent history can be sent to Claude with later chat messages, even with "smarter summaries" off, unless the owner uses on-device mode.</li>
+<li>KIBI's answers about mail, which can include senders and subjects, are saved in the owner's chat history. That history is end-to-end encrypted on the owner's server and shared with their other devices. Answers given with "smarter summaries" off aren't included in what is sent to Claude in later chats. Answers given with it on can be.</li>
 <li>What the owner says when adding a calendar event may also be sent to Claude through that server, so KIBI can understand the request.</li>
 <li>The server is designed to pass this text to Claude without storing it. Anthropic handles it under its own terms.</li>
 <li>KIBI doesn't sell Google data or use it for advertising, and doesn't transfer it to anyone except as described on this page.</li>
