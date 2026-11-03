@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KIBI privacy policy</title>
+<style>
+body { margin: 0; background: #000; color: #eee; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 48px 16px; }
+h2 { margin-top: 32px; font-size: 1.2rem; }
+li { margin-bottom: 8px; }
+a { color: #b9a9f5; }
+</style>
+</head>
+<body>
+<main>
+<h1>KIBI privacy policy</h1>
+<p>Last updated: 4 November 2026</p>
+<p>KIBI is a personal app used only by its owner. This page explains what it does with Google data.</p>
+
+<h2>What KIBI accesses</h2>
+<ul>
+<li>Google Calendar (calendar.events): to add events the owner asks for and to read the owner's schedule back to them.</li>
+<li>Gmail, read-only (gmail.readonly): to search the owner's inbox when asked and to summarize new mail. KIBI never sends, deletes or changes mail.</li>
+</ul>
+
+<h2>Where the data goes</h2>
+<ul>
+<li>The phone connects directly to Google. KIBI's server doesn't hold the owner's Google sign-in, and by default new mail notifications are built on the phone.</li>
+<li>If the owner asks about mail in chat and has set up their own server, the question and the matching emails' details and preview text are sent to an AI model (Anthropic's Claude) through that server to find and write the answer. This doesn't depend on the "smarter summaries" setting, and these emails aren't filtered, so a preview could contain a one-time code.</li>
+<li>If the owner turns on "smarter summaries", the text of new mail worth a notification is sent to Claude through the same server to write a short summary. Mail recognized as a one-time code or a promotion isn't sent this way.</li>
+<li>What the owner says when adding a calendar event may also be sent to Claude through that server, so KIBI can understand the request.</li>
+<li>The server is designed to pass this text to Claude without storing it. Anthropic handles it under its own terms.</li>
+<li>KIBI doesn't sell Google data or use it for advertising, and doesn't transfer it to anyone except as described on this page.</li>
+<li>Use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+</ul>
+
+<h2>Removing access</h2>
+<p>Disconnect in KIBI's Settings, or remove KIBI at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</p>
+
+<p>Contact: <a href="mailto:sonicmanfawaz@gmail.com">sonicmanfawaz@gmail.com</a></p>
+</main>
+</body>
+</html>
